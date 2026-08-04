@@ -1,0 +1,9 @@
+**/target/
+.idea
+*.iml
+*.class
+*Test.java
+**/test/
+
+# 本地真实配置（含账号密码），禁止上传。模板见 application-dev-example.yml
+sky-server/src/main/resources/application-dev.yml
