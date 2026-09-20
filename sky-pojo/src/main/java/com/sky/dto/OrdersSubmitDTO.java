@@ -28,4 +28,6 @@ public class OrdersSubmitDTO implements Serializable {
     private Integer packAmount;
     //总金额
     private BigDecimal amount;
+    //幂等请求号（前端生成，防止重复提交）
+    private String requestId;
 }

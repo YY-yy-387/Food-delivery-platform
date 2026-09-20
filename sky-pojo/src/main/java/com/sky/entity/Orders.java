@@ -44,6 +44,11 @@ public class Orders implements Serializable {
 
     //订单状态 1待付款 2待接单 3已接单 4派送中 5已完成 6已取消 7退款
     private Integer status;
+    private Integer refundStatus;
+    private LocalDateTime refundTime;
+    private java.math.BigDecimal refundAmount;
+    private Long couponId;
+    private java.math.BigDecimal discountAmount;
 
     //下单用户id
     private Long userId;

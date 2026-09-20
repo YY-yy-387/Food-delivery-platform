@@ -35,4 +35,14 @@ public class Result<T> implements Serializable {
         return result;
     }
 
+    /**
+     * 带自定义状态码的错误返回（如限流429）
+     */
+    public static <T> Result<T> error(int code, String msg) {
+        Result result = new Result();
+        result.msg = msg;
+        result.code = code;
+        return result;
+    }
+
 }
